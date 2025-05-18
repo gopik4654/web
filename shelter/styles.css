@@ -1,0 +1,96 @@
+body.home {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/originals/7e/35/13/7e3513fb4484ac97d6f726123fd9e1ff.jpg'); /* Путь к изображению */
+    background-size: cover; /* Заполняет весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+    color: #000000; /* Цвет текста для выделения на фоне */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Белый фон для остальных страниц */
+    color: #000000; /* Цвет текста для остальных страниц */
+}
+
+/* Остальные стили остаются без изменений */
+header {
+    background-color: #08232e; /* Цвет фона заголовка */
+    color: white; /* Цвет текста в заголовке */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0d0086; /* Цвет ссылок при наведении */
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(152, 155, 114, 0.8); 
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #08232e; /* Цвет фона подвала */
+    color: white; /* Цвет текста в подвале */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+        background: white;
+    }
+}
+
+.about-image {
+    max-width: 100%; /* Ограничивает ширину изображения */
+    height: auto; /* Сохраняет пропорции изображения */
+    border-radius: 15px; /* Закругляет углы изображения */
+    margin-top: 10px; /* Отступ сверху */
+}
